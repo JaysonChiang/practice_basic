@@ -1,0 +1,45 @@
+<div class="container">
+
+    <section class="filter-section">
+        <div class="">
+            <span class="nav-title">排序</span>
+            <button class="btn nav-button" ng-class="vm.sortClass('publish')" ng-click="vm.sortBy('publish')">發布時間</button>
+            <button class="btn nav-button" ng-class="vm.sortClass('views')" ng-click="vm.sortBy('views')">觀看次數</button>
+            <button class="btn nav-button" ng-class="vm.sortClass('collectCount')" ng-click="vm.sortBy('collectCount')">收藏次數</button>
+        </div>
+        <div>
+            <span class="nav-title">長度</span>
+            <button class="btn nav-button" ng-class="vm.filterClass('unlimit')" ng-click="vm.filterFunction('unlimit')">不限</button>
+            <button class="btn nav-button" ng-class="vm.filterClass('4min')" ng-click="vm.filterFunction('4min')">4分鐘以下</button>
+            <button class="btn nav-button" ng-class="vm.filterClass('5to10')" ng-click="vm.filterFunction('5to10')">5 - 10 分鐘</button>
+            <button class="btn nav-button" ng-class="vm.filterClass('over10')" ng-click="vm.filterFunction('over10')">超過10 分鐘</button>
+        </div>
+    </section>
+
+    <section class="cards-section">
+
+        <div class="card" ng-repeat="info in vm.infos | orderBy:vm.sortType:true">
+            
+            <div class="crop">
+                <img class="card-img-top" ng-src="{{info.thumbnail}}" alt="{{info.title}}">
+                <span class="card-duration">{{info.mmss}}</span>
+            </div>
+
+            <div class="card-body">
+                <div class="card-shortcut card-title" >
+                   {{info.title}}
+                </div>
+
+                <div class="card-views">
+                    <i class="material-icons md-19">headset</i>
+                    <span class="card-views-text">{{info.views}}</span>
+                </div>
+
+                <div class="card-types"><span ng-class="['card-badge','card-caption']" ng-repeat="caption in info.captions_zh">{{caption}}</span><span class="card-badge card-level">{{info.level_zh}}</span></div>
+
+            </div>
+        </div>
+
+
+    </section>
+</div>

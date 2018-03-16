@@ -1,0 +1,175 @@
+body{ font-family: 'NotoSansCJKtc-Regular';}
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+.material-icons.md-19 { font-size: 19px; }
+
+#vt .filter-section{
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+    border-bottom: 1px solid #D8D8D8;;
+    margin:30px 0px;
+}
+#vt .filter-section div{
+    padding:8px 20px
+}
+#vt .cards-section {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+#vt .nav-title{
+    font-family: NotoSansCJKtc-Medium;
+    font-size: 14px;
+    color: #787878;
+    letter-spacing: 0;
+    line-height: 21px;
+    padding:0px 16px;
+}
+
+#vt .nav-button{
+    font-family: NotoSansCJKtc-Regular;
+    font-size:12px;
+    font-weight:0;
+    padding:4px 8px;
+    letter-spacing: 0;
+    line-height: 16px;
+}
+#vt .nav-button-focus{
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 16px;
+}
+#vt .nav-button-unfocus{
+    color: #787878;
+}
+
+#vt .card{
+    width: 240px;
+    height: 228px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.30);
+    border-radius: 4px;
+    margin:10px;
+    border:none;
+}
+#vt .card .crop {
+   position: relative;
+   height: 135px;
+   overflow: hidden;
+   border-radius: 4px 4px 0 0;
+}
+
+#vt .card .crop img {
+    margin: -25px 0;
+}
+
+ #vt .card .crop:hover {
+    position:relative;
+    top:-5px;
+    left:-10px;
+    width:110%;
+    height:110%;
+    display:block;
+    z-index:999;
+    border-radius: 4px;
+}
+
+
+
+#vt .card-duration{
+    position:absolute;
+    right:8px;
+    bottom:8px;
+    font-family: SFUIText-Medium;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 16px;
+    padding:2px;
+    background-color:black
+}
+
+#vt .card-body{
+    padding:8px 8px 21px 8px
+}
+
+#vt .card-shortcut{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+#vt .card-title {
+    font-family: NotoSansCJKtc-Regular;
+    font-size: 14px;
+    color: #212B36;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+#vt .card-views{
+    align-items: center;
+    display: flex;
+    color: #787878;
+    margin-top: 8px;
+}
+
+#vt .card-views-text {
+    font-family: NotoSansCJKtc-Regular;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-left:5px;
+}
+
+#vt .card-types {
+position: absolute;
+right:8px;
+bottom:8px
+}
+
+#vt .card-badge {
+    padding:2px 8px;
+    line-height: 17px;
+    border-radius: 2px;
+    font-family: PingFangTC-Medium;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: -0.03px;
+    margin:0 0 0 8px;
+
+}
+#vt .card-caption{
+    background: #4283E4;
+}
+#vt .card-level{
+    background: #37C597;
+}
+
+

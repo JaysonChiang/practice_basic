@@ -1,0 +1,24 @@
+{
+  "name": "voicetube",
+  "description": "practice project",
+  "main": "app/index.html",
+  "keywords": [
+    "voicetube"
+  ],
+  "authors": [
+    "voicetube",
+    "jaysonchiang"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/lib"
+  ],
+  "dependencies": {
+    "angular": "1.6.9",
+    "angular-route": "^1.6.9",
+    "reset-css": "^3.0.0"
+  }
+}
