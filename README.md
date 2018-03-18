@@ -1,5 +1,5 @@
 # practice_voicetube
 
-npm install
-bower install
+npm install＜/br＞
+bower install＜/br＞
 gulp
