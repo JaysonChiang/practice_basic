@@ -1,4 +1,4 @@
-<div class="container">
+<div class="main-container">
 
     <section class="filter-section">
         <div class="">
@@ -16,30 +16,15 @@
         </div>
     </section>
 
-    <section class="cards-section">
+    <section class="card-section">
 
-        <div class="card" ng-repeat="info in vm.infos | orderBy:vm.sortType:true">
-            
-            <div class="crop">
-                <img class="card-img-top" ng-src="{{info.thumbnail}}" alt="{{info.title}}">
-                <span class="card-duration">{{info.mmss}}</span>
-            </div>
-
-            <div class="card-body">
-                <div class="card-shortcut card-title" >
-                   {{info.title}}
-                </div>
-
-                <div class="card-views">
-                    <i class="material-icons md-19">headset</i>
-                    <span class="card-views-text">{{info.views}}</span>
-                </div>
-
-                <div class="card-types"><span ng-class="['card-badge','card-caption']" ng-repeat="caption in info.captions_zh">{{caption}}</span><span class="card-badge card-level">{{info.level_zh}}</span></div>
-
-            </div>
+        <div class="card-grid" ng-hide="vm.infos.length<=0" ng-repeat="info in vm.infos | orderBy:vm.sortType:true">
+            <card info="info"></card>
         </div>
 
+        <div class="no-result" ng-hide="vm.infos.length > 0">
+            沒有結果
+        </div>
 
     </section>
 </div>

@@ -1,0 +1,23 @@
+<div class="card">
+
+        <div class="crop">
+            <img class="card-img-top" ng-src="{{$ctrl.info.thumbnail}}" alt="{{$ctrl.info.title}}">
+            <span class="card-duration">{{$ctrl.info.mmss}}</span>
+        </div>
+
+            <div class="card-body">
+                <div class="card-shortcut card-desc">{{$ctrl.info.title}}</div>
+            </div>
+
+            <div class="card-views">
+                <i class="material-icons md-19">headset</i>
+                <span class="card-views-text">{{$ctrl.info.views}}</span>
+            </div>
+
+            <div class="card-types">
+                <span ng-class="['card-badge','card-caption']" ng-repeat="caption in $ctrl.info.captions_zh">{{caption}}</span>
+                <span class="card-badge card-level">{{$ctrl.info.level_zh}}</span>
+            </div>
+
+
+    </div>
