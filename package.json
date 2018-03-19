@@ -1,0 +1,28 @@
+{
+  "name": "practice-voicetube",
+  "version": "1.0.0",
+  "description": "practice voicetube",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-webserver": "^0.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaysonChiang/practice_voicetube.git"
+  },
+  "keywords": [
+    "voicetube"
+  ],
+  "author": "voicetube jaysonchiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaysonChiang/practice_voicetube/issues"
+  },
+  "homepage": "https://github.com/JaysonChiang/practice_voicetube#readme"
+}
