@@ -19,8 +19,6 @@
   "dependencies": {
     "angular": "1.6.9",
     "angular-route": "^1.6.9",
-    "reset-css": "^3.0.0",
-    "bootstrap": "4.0",
-    "jquery": "3.2"
+    "reset-css": "^3.0.0"
   }
 }

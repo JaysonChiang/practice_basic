@@ -1,35 +1,8 @@
-/* material icons for phone icon */
-.material-icons {
-font-family: 'Material Icons';
-font-weight: normal;
-font-style: normal;
-font-size: 24px;  /* Preferred icon size */
-display: inline-block;
-line-height: 1;
-text-transform: none;
-letter-spacing: normal;
-word-wrap: normal;
-white-space: nowrap;
-direction: ltr;
-
-/* Support for all WebKit browsers. */
--webkit-font-smoothing: antialiased;
-/* Support for Safari and Chrome. */
-text-rendering: optimizeLegibility;
-
-/* Support for Firefox. */
--moz-osx-font-smoothing: grayscale;
-
-/* Support for IE. */
-font-feature-settings: 'liga';
-}
-.material-icons.md-19 { font-size: 19px; }
-
 body { 
     font-family: 'NotoSansCJKtc-Regular';
 }
 
-#vt .main-container {
+.main-container {
     max-width:1040px;
     width:100%;
     margin-left:auto;
@@ -38,7 +11,7 @@ body {
     padding-right:0px;
 }
 
-#vt .filter-section {
+.filter-section {
     display:flex;
     justify-content:flex-start;
     flex-wrap:wrap;
@@ -46,15 +19,15 @@ body {
     margin:30px 0px;
 }
 
-#vt .filter-section div {
+.filter-section div {
     padding:8px 20px
 }
 
-#vt .card-section {
+.card-section {
     width:100%
 }
 
-#vt .nav-title {
+.nav-title {
     font-family: NotoSansCJKtc-Medium;
     font-size: 14px;
     color: #787878;
@@ -63,52 +36,60 @@ body {
     padding:0px 16px;
 }
 
-#vt .nav-button {
+.nav-button {
     font-family: NotoSansCJKtc-Regular;
     font-size:12px;
     font-weight:0;
     padding:4px 8px;
     letter-spacing: 0;
     line-height: 16px;
+    border-radius: .25rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
 }
 
-#vt .nav-button-focus {
+.nav-button-focus {
     color: #FFFFFF;
     letter-spacing: 0;
     line-height: 16px;
+    background-color: #007bff;
+    border-color: #007bff;
 }
 
-#vt .nav-button-unfocus {
+.nav-button-unfocus {
     color: #787878;
 }
 
-#vt .card-grid {
+.card-grid {
     float:left;
     width:25%;
     min-width:260px;
 }
 @media (min-width:260px) {
-    #vt .card-grid{
+    .card-grid{
         width:100%;
     }
 }
 @media (min-width:520px) {
-    #vt .card-grid{
+    .card-grid{
         width:50%;
     }
 }
 @media (min-width:780px) {
-    #vt .card-grid{
+    .card-grid{
         width:33%;
     }
 }
 @media (min-width:1040px) {
-    #vt .card-grid{
+    .card-grid{
         width:25%;
     }
 }
 
-#vt .card {
+.card {
+    position: relative;
     width: 240px;
     height: 228px;
     background: #FFFFFF;
@@ -116,20 +97,23 @@ body {
     border-radius: 4px;
     margin:10px auto;
     border:none;
+    display:flex;
+    flex-direction:column;
+    min-width:0;
 }
-#vt .card .crop {
+.card .crop {
    position: relative;
    height: 135px;
    overflow: hidden;
    border-radius: 4px 4px 0 0;
 }
 
-#vt .card .crop img {
+.card .crop img {
     margin-top: -23px;
     margin-bottom: -22px;
 }
 
-#vt .card .crop:hover {
+.card .crop:hover {
     position:relative;
     display:block;
     z-index:999;
@@ -137,7 +121,7 @@ body {
     transform: scale(1.1);
 }
 
-#vt .card-duration {
+.card-duration {
     position:absolute;
     right:8px;
     bottom:8px;
@@ -150,11 +134,15 @@ body {
     background-color:black
 }
 
-#vt .card-body {
+.card-img {
+    width:100%;
+}
+
+.card-body {
     padding:4px 8px 0px 8px
 }
 
-#vt .card-shortcut {
+.card-shortcut {
     overflow:hidden;
     text-overflow:ellipsis;
     display:-webkit-box; 
@@ -162,7 +150,7 @@ body {
     -webkit-line-clamp:2;
 }
 
-#vt .card-desc {
+.card-desc {
     font-family: NotoSansCJKtc-Regular;
     font-size: 14px;
     color: #212B36;
@@ -170,7 +158,7 @@ body {
     line-height: 20px;
 }
 
-#vt .card-views {
+.card-views {
     position: absolute;
     align-items: center;
     display: flex;
@@ -179,7 +167,7 @@ body {
     bottom:21px;
 }
 
-#vt .card-views-text {
+.card-views-text {
     font-family: NotoSansCJKtc-Regular;
     font-size: 14px;
     letter-spacing: 0;
@@ -187,13 +175,13 @@ body {
     margin-left:5px;
 }
 
-#vt .card-types {
+.card-types {
     position: absolute;
     right:8px;
     bottom:8px
 }
 
-#vt .card-badge {
+.card-badge {
     padding:2px 8px;
     line-height: 17px;
     border-radius: 2px;
@@ -205,18 +193,45 @@ body {
 
 }
 
-#vt .card-caption {
+.card-caption {
     background: #4283E4;
 }
 
-#vt .card-level {
+.card-level {
     background: #37C597;
 }
 
-#vt .no-result {
+.no-result {
     display: flex;
     justify-content: center;
 
 }
 
 
+
+/* material icons for phone icon */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    }
+    .material-icons.md-19 { font-size: 19px; }
