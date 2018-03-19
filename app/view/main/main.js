@@ -24,7 +24,7 @@ function MainController($scope, dataService, util) {
 }
 MainController.prototype.sortClass = function (sortType) {
     var vm = this;
-    return vm.sortType === sortType ? ['btn-primary', 'nav-button-focus'] : ['btn-link', 'nav-button-unfocus'];
+    return vm.sortType === sortType ? [ 'nav-button-focus'] : ['nav-button-unfocus'];
 };
 MainController.prototype.sortBy = function (sortType) {
     var vm = this;
@@ -33,7 +33,7 @@ MainController.prototype.sortBy = function (sortType) {
 
 MainController.prototype.filterClass = function (filterType) {
     var vm = this;
-    return vm.filterType === filterType ? ['btn-primary', 'nav-button-focus'] : ['btn-link', 'nav-button-unfocus'];
+    return vm.filterType === filterType ? [ 'nav-button-focus'] : ['nav-button-unfocus'];
 };
 MainController.prototype.filterFunction = function (filterType) {
     var vm = this;

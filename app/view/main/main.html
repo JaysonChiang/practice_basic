@@ -3,16 +3,16 @@
     <section class="filter-section">
         <div>
             <span class="nav-title">排序</span>
-            <button class="nav-button" ng-class="vm.sortClass('publish')" ng-click="vm.sortBy('publish')">發布時間</button>
-            <button class="nav-button" ng-class="vm.sortClass('views')" ng-click="vm.sortBy('views')">觀看次數</button>
-            <button class="nav-button" ng-class="vm.sortClass('collectCount')" ng-click="vm.sortBy('collectCount')">收藏次數</button>
+            <button ng-class="vm.sortClass('publish')" ng-click="vm.sortBy('publish')">發布時間</button>
+            <button ng-class="vm.sortClass('views')" ng-click="vm.sortBy('views')">觀看次數</button>
+            <button ng-class="vm.sortClass('collectCount')" ng-click="vm.sortBy('collectCount')">收藏次數</button>
         </div>
         <div>
             <span class="nav-title">長度</span>
-            <button class="nav-button" ng-class="vm.filterClass('unlimit')" ng-click="vm.filterFunction('unlimit')">不限</button>
-            <button class="nav-button" ng-class="vm.filterClass('4min')" ng-click="vm.filterFunction('4min')">4分鐘以下</button>
-            <button class="nav-button" ng-class="vm.filterClass('5to10')" ng-click="vm.filterFunction('5to10')">5 - 10 分鐘</button>
-            <button class="nav-button" ng-class="vm.filterClass('over10')" ng-click="vm.filterFunction('over10')">超過10 分鐘</button>
+            <button ng-class="vm.filterClass('unlimit')" ng-click="vm.filterFunction('unlimit')">不限</button>
+            <button ng-class="vm.filterClass('4min')" ng-click="vm.filterFunction('4min')">4分鐘以下</button>
+            <button ng-class="vm.filterClass('5to10')" ng-click="vm.filterFunction('5to10')">5 - 10 分鐘</button>
+            <button ng-class="vm.filterClass('over10')" ng-click="vm.filterFunction('over10')">超過10 分鐘</button>
         </div>
     </section>
 

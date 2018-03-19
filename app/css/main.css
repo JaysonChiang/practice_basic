@@ -36,7 +36,7 @@ body {
     padding:0px 16px;
 }
 
-.nav-button {
+.filter-section button {
     font-family: NotoSansCJKtc-Regular;
     font-size:12px;
     font-weight:0;
@@ -60,6 +60,7 @@ body {
 
 .nav-button-unfocus {
     color: #787878;
+    cursor: pointer;
 }
 
 .card-grid {
