@@ -1,9 +1,6 @@
-# practice_voicetube
+# practice_basic
 
-npm install  <br />
-
-bower install  <br />
-
-gulp
-
-http://localhost:8080/
+1. npm install  <br />
+2. bower install  <br />
+3. gulp <br/>
+4. open: http://localhost:8080/
