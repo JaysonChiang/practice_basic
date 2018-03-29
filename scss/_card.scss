@@ -1,0 +1,116 @@
+.card {
+    position: relative;
+    width: 240px;
+    height: 228px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.30);
+    border-radius: 4px;
+    margin:10px auto;
+    border:none;
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+
+    .crop {
+        position: relative;
+        height: 135px;
+        overflow: hidden;
+        border-radius: 4px 4px 0 0;
+
+        img {
+            margin-top: -23px;
+            margin-bottom: -22px;
+        }
+
+        .duration {
+            position:absolute;
+            right:8px;
+            bottom:8px;
+            font-family: SFUIText-Medium;
+            font-size: 12px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: 16px;
+            padding:2px;
+            background-color:black
+        }
+        
+        .img {
+            width:100%;
+        }
+     }
+
+     &:hover {
+        position:relative;
+        display:block;
+        z-index:999;
+        border-radius: 4px;
+        transform: scale(1.1);
+    }
+
+}
+
+.card-body {
+    padding:4px 8px 0px 8px;
+
+    .shortcut {
+        overflow:hidden;
+        text-overflow:ellipsis;
+        display:-webkit-box; 
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:2;
+    }
+    
+    .desc {
+        font-family: NotoSansCJKtc-Regular;
+        font-size: 14px;
+        color: #212B36;
+        letter-spacing: 0;
+        line-height: 20px;
+    }
+}
+
+.card-views {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    color: #787878;
+    left:8px;
+    bottom:21px;
+
+    .views-text {
+        font-family: NotoSansCJKtc-Regular;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-left:5px;
+    }
+}
+
+.card-types {
+
+    position: absolute;
+    right:8px;
+    bottom:8px;
+
+    .badge {
+        padding:2px 8px;
+        line-height: 17px;
+        border-radius: 2px;
+        font-family: PingFangTC-Medium;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: -0.03px;
+        margin:0 0 0 8px;
+    }
+    
+    .caption {
+        background: #4283E4;
+    }
+    
+    .level {
+        background: #37C597;
+    }
+    
+}
+

@@ -8,7 +8,9 @@
     "gulp-connect": "^5.5.0",
     "gulp-webserver": "^0.9.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-sass": "^3.2.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
