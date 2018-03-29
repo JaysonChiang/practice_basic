@@ -1,9 +1,19 @@
-# practice_voicetube
+# practice_f2e_basic
+basic practice for angular.js
 
-npm install  <br />
+<h2>Installation</h2>
+<ol>
+<li> clone project</li>
+<li> $ npm install  </li>
+<li> $ bower install  </li>
+<li> $ gulp </li>
+<li> open http://localhost:8080/</li>
+</ol>
 
-bower install  <br />
-
-gulp
-
-http://localhost:8080/
+<h2>Features</h2>
+<ul>
+<li>main framework: angular.js</li>
+<li>ajax call</li>
+<li>ng-repeat with order and filter</li>
+<li>responsive web design</li>
+</ul>
